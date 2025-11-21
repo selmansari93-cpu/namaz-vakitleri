@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namaz Vakitleri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ÜST BAŞLIK -->
+  <header id="ust">
+    <h1>Namaz Vakitleri</h1>
+    <p id="sehir">Şehir alınamadı...</p>
+    <p id="tarih">--.--.----</p>
+    <p id="saat-canli">--:--:--</p> <!-- 🕒 Dijital saat -->
+  </header>
+
+  <!-- NAMAZ VAKİTLERİ GRID -->
+  <main>
+
+    <section id="vakitler">
+      
+      <div id="kalan-kutu" class="vakit-kutu vakit-kutu-genis">
+        <span class="vakit-adi"> Sonraki Vakte Kalan Süre</span>
+        <span class="vakit-saat" id="geri-sayim">--:--:--</span>
+  </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">İmsak</span>
+        <span class="vakit-saat" id="imsak">--:--</span>
+      </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">Güneş</span>
+        <span class="vakit-saat" id="gunes">--:--</span>
+      </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">Öğle</span>
+        <span class="vakit-saat" id="ogle">--:--</span>
+      </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">İkindi</span>
+        <span class="vakit-saat" id="ikindi">--:--</span>
+      </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">Akşam</span>
+        <span class="vakit-saat" id="aksam">--:--</span>
+      </div>
+
+      <div class="vakit-kutu">
+        <span class="vakit-adi">Yatsı</span>
+        <span class="vakit-saat" id="yatsi">--:--</span>
+      </div>
+
+    </section>
+
+    <!-- RAMAZAN MODU (Şimdilik kapalı, Ramazan yaklaşınca dolduracağız) -->
+    <section id="imsakiye" style="display:none;">
+      <h2>Ramazan İmsakiye</h2>
+      <p id="sahur-sayac">Sahura kalan: --:--:--</p>
+      <p id="iftar-sayac">İftara kalan: --:--:--</p>
+      <div id="imsakiye-tablo"></div>
+    </section>
+    
+    <section id="kible">
+  <h2>Kıble Yönü</h2>
+  <div id="pusula">
+  <svg id="pusula-ok" viewBox="0 0 100 100">
+    <polygon points="50,10 70,50 50,40 30,50" fill="#333"/>
+  </svg>
+</div>
+
+</section>
+
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
